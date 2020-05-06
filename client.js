@@ -12,6 +12,19 @@ const connect = function() {
     console.log('Message from server', message);
   });
 
+  conn.on('connect', () => {
+    console.log('Successfully connected to the game server!');
+    conn.write('Name: LW');
+    // const moves = ['Move: up', 'Move: up', 'Move: up', 'Move: up'];
+    // for (let i = 0; i < moves.length; i++) {
+    //   setTimeout(() => {
+    //     conn.write(moves[i]);
+    //   },i * 50);
+    // }
+  });
+
+  
+
   return conn;
 }
 
