@@ -22,9 +22,6 @@ const connect = function() {
     //   },i * 50);
     // }
   });
-
-  
-
   return conn;
 }
 
